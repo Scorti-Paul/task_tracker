@@ -11,13 +11,12 @@ $yellow: #ffbf3e;
   color: $white;
 }
 
-
 html, body {
   background-color: $white;
   height: 100%;
 }
 
-div#home {
+#home {
   background: url(../img/blue_mountains_mist.jpg) center center;
   background-repeat: no-repeat;
   width: 100%;
@@ -26,29 +25,64 @@ div#home {
   display: flex;
   align-items: center;
   justify-content: center;
+  .welcome-box {
+    background-color: rgba(0,0,0,.4);
+    padding: 40px 15px;
+    text-align: center;;
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+  }
 }
 
-.welcome-box {
-  background-color: rgba(0,0,0,.4);
-  padding: 40px 15px;
-  text-align: center;;
-}
 
-h1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2.4rem;
-  font-weight: 100;
-  text-transform: uppercase;
-}
 
-.btn {
+#all-tasks {
+  background: url(../img/blue_mountains_mist.jpg) center center;
+  background-repeat: no-repeat;
   width: 100%;
-  padding: 20px 20px;
-  text-align: center;
-  margin: 15px 0;
-  &.lightBlue {
-    font-size: 25px;
-    background-color: $lightBlue;
+  // height: 30%;
+  background-size: cover;
+  .header {
+    background-color: rgba(58, 71, 147, .6);
+    padding: 50px 15px;
+    text-align: right;
+    .logo {
+      font-family: 'Monoton', cursive;
+      float: left;
+      font-size: 1.8rem;
+    }
+    .tasks-total {
+      position: relative;
+      top: -20px;
+      .task {
+        display: inline-block;
+        .number {
+          color: $lightPurple;
+          font-weight: 100;
+          font-size: 60px;
+          margin: 0 10px 0 0;
+          position: relative;
+          top: 15px;
+        }
+      }
+    }
+  }
+
+  .add-circle {
+    background-color: $white;
+    border-radius: 50%;
+    position: absolute;
+    top: 125px;
+    right: 25px;
+    padding: 10px 12px;
+    .fa {
+      color: $lightBlue;
+      font-size: 3rem;
+    }
   }
 }
 
@@ -65,85 +99,25 @@ h1 {
 
 
 
-// body {
-//   line-height: 1;
-//   background: white;
-// }
 
-// ol,
-// ul {
-//   list-style: none;
-// }
 
-// blockquote,
-// q {
-//   quotes: none;
-// }
 
-// blockquote:after,
-// blockquote:before,
-// q:after,
-// q:before {
-//   content: '';
-//   content: none;
-// }
 
-// table {
-//   border-collapse: collapse;
-//   border-spacing: 0;
-// }
 
-// body {
-//   font-family: 'Roboto', sans-serif;
-// }
 
-// h1 {
-//   font-weight: 100;
-//   font-size: 50px;
-// }
 
-// .home {
-//   height: 100%;
-//   width: 100%;
-//   text-align: center;
-//   .Aligner {
-//     min-height: 100vh;
-//     display: -ms-flexbox;
-//     display: flex;
-//     -ms-flex-align: center;
-//     align-items: center;
-//     -ms-flex-pack: center;
-//     justify-content: center;
-//   }
-//   img {
-//     width: 100%;
-//     max-width: 300px;
-//     margin: 0 auto;
-//   }
-//   .Aligner-item {
-//     max-width: 50%;
-//   }
-//   .menu ul li {
-//     padding: 10px 15px;
-//     display: inline-block;
-//     font-family: 'Roboto', sans-serif;
-//     font-size: 18px;
-//     font-weight: 500;
-//   }
-//   .version-num {
-//     background: #E8E8E8;
-//     border-radius: 4px;
-//     padding: 7px 15px;
-//     display: inline-block;
-//     font-size: 12px;
-//     margin: 10px 0 20px;
-//   }
-//   a {
-//     text-decoration: none;
-//     color: #30395C;
-//     transition: all 0.3s ease-in-out;
-//   }
-//   a:hover {
-//     color: #43D4D6;
-//   }
-// }
+
+
+
+
+.btn {
+  width: 100%;
+  padding: 20px 20px;
+  text-align: center;
+  margin: 15px 0;
+  text-decoration: none;
+  &.lightBlue {
+    font-size: 25px;
+    background-color: $lightBlue;
+  }
+}
