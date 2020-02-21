@@ -69,7 +69,7 @@ html, body {
   height: 100%;
 }
 
-div#home {
+#home {
   background: url(../img/blue_mountains_mist.jpg) center center;
   background-repeat: no-repeat;
   width: 100%;
@@ -86,17 +86,72 @@ div#home {
           justify-content: center;
 }
 
-.welcome-box {
+#home .welcome-box {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 40px 15px;
   text-align: center;
 }
 
-h1 {
+#home .welcome-box h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 2.4rem;
   font-weight: 100;
   text-transform: uppercase;
+}
+
+#home .welcome-box a {
+  text-decoration: none;
+}
+
+#all-tasks {
+  background: url(../img/blue_mountains_mist.jpg) center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+#all-tasks .header {
+  background-color: rgba(58, 71, 147, 0.6);
+  padding: 50px 15px;
+  text-align: right;
+}
+
+#all-tasks .header .logo {
+  font-family: 'Monoton', cursive;
+  float: left;
+  font-size: 1.8rem;
+}
+
+#all-tasks .header .tasks-total {
+  position: relative;
+  top: -20px;
+}
+
+#all-tasks .header .tasks-total .task {
+  display: inline-block;
+}
+
+#all-tasks .header .tasks-total .task .number {
+  color: #9787ee;
+  font-weight: 100;
+  font-size: 60px;
+  margin: 0 10px 0 0;
+  position: relative;
+  top: 15px;
+}
+
+#all-tasks .add-circle {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 125px;
+  right: 25px;
+  padding: 10px 12px;
+}
+
+#all-tasks .add-circle .fa {
+  color: #25b3ec;
+  font-size: 3rem;
 }
 
 .btn {
@@ -107,6 +162,7 @@ h1 {
 }
 
 .btn.lightBlue {
+  text-decoration: none;
   font-size: 25px;
   background-color: #25b3ec;
 }
