@@ -99,6 +99,10 @@ html, body {
   text-transform: uppercase;
 }
 
+#home .welcome-box a {
+  text-decoration: none;
+}
+
 #all-tasks {
   background: url(../img/blue_mountains_mist.jpg) center center;
   background-repeat: no-repeat;
@@ -155,10 +159,10 @@ html, body {
   padding: 20px 20px;
   text-align: center;
   margin: 15px 0;
-  text-decoration: none;
 }
 
 .btn.lightBlue {
+  text-decoration: none;
   font-size: 25px;
   background-color: #25b3ec;
 }
