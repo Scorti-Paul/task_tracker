@@ -1,6 +1,8 @@
 
 
 #all-tasks {
+  height: 100%;
+  overflow: auto;
   .header {
     background: url(../img/blue_mountains_mist.jpg) center center;
     background-repeat: no-repeat;
@@ -40,6 +42,7 @@
       top: 125px;
       right: 25px;
       padding: 10px 12px;
+      cursor: pointer;
       .fa {
         color: $lightBlue;
         font-size: 3rem;
@@ -48,6 +51,7 @@
   }
   .content-area {
     width: 100%;
+    overflow: auto;
     .tasks-container {
       margin: 40px 0;
       .task-box {
@@ -79,8 +83,82 @@
       }
     }
   }
+  .task-form {
+    background-color: $darkBlue;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    color: $white;
+    padding: 50px 0;
+    transform: translate(0, 100%);
+    transition: all .6s ease-in-out;
+    &.active {
+      transform: translate(0, 0);
+    }
+    .close-btn {
+      position: absolute;
+      top: 35px;
+      right: 35px;
+      padding: 15px;
+      cursor: pointer;
+      .fa {
+        font-size: 30px;
+      }
+    }
+    form {
+      display: block;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 15px;
+    }
+    h3 {
+      margin: 35px 0;
+      font-size: 36px;
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      text-transform: capitalize;
+      margin: 0 0 5px 0;
+      font-size: 24px;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.1);
+      // background: transparent;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 1.0);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 30px;
+      color: $white;
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+    textarea {
+      height: 250px;
+    }
+    button {
+      background-color: $lightBlue;
+      padding: 15px 20px;
+      width: 100%;
+      text-transform: uppercase;
+      border: none;
+      font-size: 16px;
+      color: $white;
+    }
+  }
 }
-    
+
 
   
 .container {
@@ -88,6 +166,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
   }
   
   
