@@ -21,7 +21,7 @@
         font-size: 1.8rem;
       }
       .tasks-total {
-        position: sticky;
+        position: relative;
         top: -20px;
         .task {
           display: inline-block;
@@ -172,22 +172,83 @@
 
 //LAPTOP
 @media screen and (min-width: 1200px) {
-  #all-tasks {
-    background-color: #979823;
-  }
+  
 }
 
 //TABLETS
 @media screen and (max-width: 1199px) {
-  #all-tasks {
-    background-color: #023902;
-  }
+  
 }
 
 //PHONE
 @media screen and  (max-width: 767px) {
   #all-tasks {
-    background-color: #ac32bd;
+    .header {
+      .add-circle {
+        background-color:$white;
+        border-radius: 50%;
+        position: absolute;
+        top: 112px;
+        right: 25px;
+        padding: 10px 14px;
+      }
+      .top {
+        .tasks-total {
+          top: 0;
+          .task {
+            display: block;
+            .number {
+              color: #9887f8;
+              font-weight: 500;
+              font-size: 18px; 
+              margin: 0 10px 0 0;
+              position: relative;
+              top: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+//EXTRA SMALL PHONES
+@media screen and  (max-width: 453px) {
+  #all-tasks {
+    .header {
+      .add-circle {
+        background-color:$white;
+        border-radius: 50%;
+        position: absolute;
+        top: 128px;
+        right: 25px;
+        padding: 10px 14px;
+      }
+      .top {
+        .logo {
+          float: none;
+          text-align: center;
+        }
+        .tasks-total {
+          text-align: center;
+          top: 0;
+          .task {
+            display: inline-block;
+            margin-top: 15px;
+            .number {
+              color: #9887f8;
+              font-weight: 500;
+              font-size: 18px; 
+              margin: 0 10px 0 0;
+              position: relative;
+              top: 3px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
